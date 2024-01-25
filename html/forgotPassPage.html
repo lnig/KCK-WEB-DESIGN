@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../css/forgotPassPage.css">
+</head>
+<body>
+
+    <div class="l-form">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+
+        <div class="form">
+            <img src="../assets/Kids reading-cuate.svg" alt="reading" class="form__img">
+
+            <form action="" class="form__content">
+            
+                <img src="../assets/forgotPass.svg" alt="padlock" class="form__content-img">
+
+                <h1 class="form__title">Forgot your password?</h1>
+                <p class="form__description">Enter your email so that we can send you password reset link</p>
+
+                <div class="form__div form__div-one">
+                    <div class="form__icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+
+                    <div class="form__div-input">
+                        <label for="" class="form__label">Email</label>
+                        <input type="email" class="form__input">
+                    </div>
+                </div>
+                
+                <input type="submit" class="form_button" value="Send Email" id="submit-button">
+
+                <a href="../html/loginPage.html" class="form__link-back">
+                    Want go back?<span class="form__link-back-bold"> Click Here</span>
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = '../html/checkEmailPage.html';
+    });
+    </script>
+    
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

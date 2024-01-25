@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../css/checkEmailPage.css">
+</head>
+<body>
+
+    <div class="l-form">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+
+        <div class="form">
+            <img src="../assets/Kids reading-cuate.svg" alt="reading" class="form__img">
+
+            <form action="" class="form__content">
+            
+                <img src="../assets/checkEmail.svg" alt="padlock" class="form__content-img">
+
+                <h1 class="form__title">Check your Email</h1>
+                <p class="form__description">
+                    Thanks! An email was sent that will ask you to click on 
+                    verify that you own this account. If you don’t get the 
+                    email, please try again.
+                </p>
+                
+                <input type="submit" class="form_button" value="Send Email Again" id="submit-button">
+
+                <a href="../html/loginPage.html" class="form__link-back">
+                    Want go back?<span class="form__link-back-bold"> Click Here</span>
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = '../html/enterNewPassPage.html';
+    });
+    </script>
+    
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
